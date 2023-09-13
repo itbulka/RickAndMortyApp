@@ -15,7 +15,9 @@
 		2228DCAE2AA909E0003A332F /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2228DCAD2AA909E0003A332F /* NetworkManager.swift */; };
 		2228DCB12AA90CCC003A332F /* Color+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2228DCB02AA90CCC003A332F /* Color+Hex.swift */; };
 		2228DCB42AA90CDD003A332F /* Resources.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2228DCB32AA90CDD003A332F /* Resources.swift */; };
-		2228DCB62AA90DF7003A332F /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2228DCB52AA90DF7003A332F /* Localizable.strings */; };
+		2228DCB92AA916D9003A332F /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2228DCB82AA916D9003A332F /* WelcomeViewController.swift */; };
+		2228DCBA2AA91B81003A332F /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2228DCBC2AA91B81003A332F /* Localizable.strings */; };
+		2228DCC22AB23D20003A332F /* UIStartButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2228DCC12AB23D20003A332F /* UIStartButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,7 +31,9 @@
 		2228DCAD2AA909E0003A332F /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		2228DCB02AA90CCC003A332F /* Color+Hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Hex.swift"; sourceTree = "<group>"; };
 		2228DCB32AA90CDD003A332F /* Resources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resources.swift; sourceTree = "<group>"; };
-		2228DCB52AA90DF7003A332F /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		2228DCB82AA916D9003A332F /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		2228DCBB2AA91B81003A332F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		2228DCC12AB23D20003A332F /* UIStartButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIStartButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,9 +88,9 @@
 		2228DCA72AA907C8003A332F /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				2228DC9B2AA90719003A332F /* Assets.xcassets */,
 				2228DCB32AA90CDD003A332F /* Resources.swift */,
-				2228DCB52AA90DF7003A332F /* Localizable.strings */,
+				2228DC9B2AA90719003A332F /* Assets.xcassets */,
+				2228DCBC2AA91B81003A332F /* Localizable.strings */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -102,6 +106,7 @@
 		2228DCA92AA907E2003A332F /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				2228DCB72AA916BB003A332F /* Welcome */,
 				2228DCAB2AA90816003A332F /* Home */,
 				2228DC9D2AA90719003A332F /* LaunchScreen.storyboard */,
 			);
@@ -130,6 +135,23 @@
 				2228DCAD2AA909E0003A332F /* NetworkManager.swift */,
 			);
 			path = Network;
+			sourceTree = "<group>";
+		};
+		2228DCB72AA916BB003A332F /* Welcome */ = {
+			isa = PBXGroup;
+			children = (
+				2228DCC02AB23D09003A332F /* Components */,
+				2228DCB82AA916D9003A332F /* WelcomeViewController.swift */,
+			);
+			path = Welcome;
+			sourceTree = "<group>";
+		};
+		2228DCC02AB23D09003A332F /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				2228DCC12AB23D20003A332F /* UIStartButton.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -191,7 +213,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2228DC9F2AA90719003A332F /* LaunchScreen.storyboard in Resources */,
-				2228DCB62AA90DF7003A332F /* Localizable.strings in Resources */,
+				2228DCBA2AA91B81003A332F /* Localizable.strings in Resources */,
 				2228DC9C2AA90719003A332F /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -209,6 +231,8 @@
 				2228DCB42AA90CDD003A332F /* Resources.swift in Sources */,
 				2228DC932AA90717003A332F /* AppDelegate.swift in Sources */,
 				2228DC952AA90717003A332F /* SceneDelegate.swift in Sources */,
+				2228DCC22AB23D20003A332F /* UIStartButton.swift in Sources */,
+				2228DCB92AA916D9003A332F /* WelcomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -221,6 +245,14 @@
 				2228DC9E2AA90719003A332F /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		2228DCBC2AA91B81003A332F /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2228DCBB2AA91B81003A332F /* en */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
